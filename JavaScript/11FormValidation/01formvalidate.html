@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" name="uname" id="uname" onblur="validate(this, 'error1')"><span id="error1"></span><br><br>
+    <input type="password" name="upass" id="upass" onblur="validate(this, 'error2')"><span id="error2"></span><br><br>
+    <input type="email" name="uemail" id="uemail" onblur="validate(this, 'error3')"><span id="error3"></span><br><br>
+    <input type="tel" name="umobile" id="umobile" onblur="validate(this, 'error4')"><span id="error4"></span><br><br>
+    <button value="anything" onclick="clicksub()">Submit</button>
+</body>
+</html>
+    <script>
+        function validate(e,spnid){
+            if(e.value == ""){
+                document.getElementById(spnid).innerText = "*Required"
+            }
+            else{
+                document.getElementById(spnid).innerText = ""
+
+            }
+            // console.log(e);
+        }
+    </script>
