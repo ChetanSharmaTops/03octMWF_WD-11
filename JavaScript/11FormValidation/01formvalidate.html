@@ -11,18 +11,18 @@
     <input type="password" name="upass" id="upass" onblur="validate(this, 'error2')"><span id="error2"></span><br><br>
     <input type="email" name="uemail" id="uemail" onblur="validate(this, 'error3')"><span id="error3"></span><br><br>
     <input type="tel" name="umobile" id="umobile" onblur="validate(this, 'error4')"><span id="error4"></span><br><br>
-    <button value="anything" onclick="clicksub()">Submit</button>
 </body>
 </html>
     <script>
-        function validate(e,spnid){
+        function validate(e,parth){
             if(e.value == ""){
-                document.getElementById(spnid).innerText = "*Required"
+                document.getElementById(parth).innerText = "*Required"
             }
             else{
-                document.getElementById(spnid).innerText = ""
+                document.getElementById(parth).innerText = ""
 
             }
             // console.log(e);
         }
+        
     </script>
